@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="styles/homepage.css">
+
+<main>
+    <div id="main-container">
+        <h1>
+            CSV Upload
+        </h1>
+
+        <!-- upload csv form -->
+        <form action="/file/upload" method="post" id="input-form" enctype="multipart/form-data">
+            <label for="csv-file-input">
+                <h1>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </h1>
+                <h2>
+                    Drop CSV or click here to upload
+                </h2>
+               
+            </label>
+            <input type="file" name="csv-file" id="csv-file-input">
+            <button type="submit">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                Upload
+            </button>
+        </form>
+
+        <!-- show list of uploaded files -->
+
+        <div id="show-file">
+            <h3>
+                Recent uploads
+            </h3>
+
+            <!-- if there are no files -->
+        <% if( files.length < 1 ){%>
+            <h2>
+                No Uploads Available
+            </h2>
+            
+            <%} else{ %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>View</th>
+                            <th>Delete</th>
+                            </tr>
+                    </thead>
+
+                    <% for(file of files){%>
+                    <tbody>
+                       
+                                 <td> <%= file.filename%></td> 
+                                   
+                               <td><%= file.createdAt.toLocaleDateString() %></td>
+                                    
+            
+                                 <td> <a href="/file/view/<%=file._id%>"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>  
+                                
+                                  <td> <a href="/file/delete/<%=file._id%>" type="Get"><i class="fa-solid fa-trash"></i></a></td> 
+
+                           
+                           
+                    </tbody>
+                    <%}%>
+                </table>
+                
+                <%}%>
+
+        
+          
+        </div>
+    </div>
+
+    
+</main>

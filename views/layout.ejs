@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            <%=title%>
+        </title>
+
+        <link rel="stylesheet" href="/styles/layout.css">
+        <script src="https://kit.fontawesome.com/da2a48d4f5.js" crossorigin="anonymous"></script>
+
+
+        <%-style%>
+
+    </head>
+    <body>
+
+        <%- include("_header")-%>
+        
+        <div id="layout-main">
+            <%-body%>
+        </div>    
+
+        <%- include("_footer")-%>
+    </body>
+</html>
