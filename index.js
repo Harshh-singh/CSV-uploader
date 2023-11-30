@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 const express = require('express');
-const port = 8000;
+const port = process.env.Port;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
 
