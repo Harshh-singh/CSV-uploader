@@ -1,6 +1,20 @@
 #footer-main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 0px 2px;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
     font-family: sans-serif;
-    height: 5%;
+    height: 10%;
     background-color: #3A2A16;
     color: #bcc4bb;
+    #sociallinks{
+        a{
+            padding: 8px;
+            color: #bcc4bb;
+            text-decoration: none;
+        }
+        
+    }
 }

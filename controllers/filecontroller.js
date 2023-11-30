@@ -3,7 +3,7 @@
     const fs = require('fs');
 const { head } = require('../routes/file');
 
-    module.exports.upload = async function(req,res){
+    module.exports.upload = async function(req,res){    //upload new file
        
         try{
             // if no file selected
@@ -31,7 +31,7 @@ const { head } = require('../routes/file');
 
 
 
-    module.exports.view = async function(req,res){
+    module.exports.view = async function(req,res){  //view the file
 
         try{
         // get the id of clicked file
@@ -75,7 +75,7 @@ const { head } = require('../routes/file');
 
 
 
-    module.exports.delete = async function(req,res){
+    module.exports.delete = async function(req,res){    //delete the file
         // get the id of clicked file
         const fileId = req.params.id;
 

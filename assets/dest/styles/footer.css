@@ -1,1 +1,1 @@
-#footer-main{font-family:sans-serif;height:5%;background-color:#3a2a16;color:#bcc4bb}
+#footer-main{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:10px 0 0 2px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:10%;font-family:sans-serif;height:10%;background-color:#3a2a16;color:#bcc4bb}#footer-main #sociallinks a{padding:8px;color:#bcc4bb;text-decoration:none}
