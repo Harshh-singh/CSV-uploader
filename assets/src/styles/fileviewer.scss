@@ -1,0 +1,54 @@
+$primary-color : #bcc4bb;
+$secondry-color: #f6f6f6;
+$text-color: #5f5e5c;
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-top: 2vh;
+    form{
+        text-align: center;
+        width: 100%;
+        #searchbar{
+            color: $text-color;
+            height: 5vh;
+            width: 26vw;
+            border: 1px solid $secondry-color;
+        }
+        button{
+            background-color: #f6f6f6;
+            border: 1px solid #bcc4bb;
+            color: rgba(0,128,0,.631372549);
+            width: 7vw;
+            height: 5vh;
+            margin: 0 0 0 25px;
+        }
+    }
+table{
+    border: 1px solid $secondry-color;
+    border-collapse: collapse;
+    width: 70%;
+    thead{
+        th{
+                height: 8vh;
+                padding: 4px;
+        }
+     
+    }
+    tbody{
+        tr{
+            height: 6vh;
+            background-color: white;
+            padding: 4px;
+        }
+        .highlight{
+            background-color: $text-color;
+        }
+      
+    }
+
+       
+    }
+}
