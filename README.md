@@ -1,6 +1,8 @@
 # CSV-uploader
 CSV-Upload is a user-friendly web application designed for uploading and parsing CSV files. Developed using Node.js and Express, it offers a straightforward interface to facilitate seamless management of CSV data.
 
+- Hosted URL: https://csv-uploader-r4wr.onrender.com
+
 ## Installation
 To install CSV_Upload, please follow these steps:
 
